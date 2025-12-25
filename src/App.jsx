@@ -30,7 +30,7 @@ function App() {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-container">
           <a href="#home" className="nav-logo" onClick={(e) => scrollToSection(e, 'home')}>
-            <img src="/images/logo.png" alt="Lion Rock Institute Logo" />
+            <img src="/images/logo.svg" alt="Lion Rock Institute Logo" />
             <span>Lion Rock Institute</span>
           </a>
           <button
@@ -221,7 +221,7 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-brand">
-              <img src="/images/logo.png" alt="Lion Rock Institute Logo" />
+              <img src="/images/logo.svg" alt="Lion Rock Institute Logo" />
               <span>The Lion Rock Institute (HK) Limited</span>
             </div>
             <p className="footer-info">IRD Registered Charity | Incorporated August 8, 2007</p>
