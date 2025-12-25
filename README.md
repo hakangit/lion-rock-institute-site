@@ -47,16 +47,43 @@ npm run preview
 
 ## Deployment
 
-The site auto-deploys to Hostinger when you push to `main`:
+The site auto-deploys to Hostinger when you push to `main`.
 
-1. Make changes locally
-2. Commit and push to GitHub
-3. Hostinger automatically builds and deploys
+### How It Works
 
-**Build settings on Hostinger:**
-- Install command: `npm install`
-- Build command: `npm run build`
-- Publish directory: `dist`
+1. **GitHub repo:** https://github.com/hakangit/lion-rock-institute-site
+2. **Hostinger** is connected to this repo via GitHub integration
+3. When you push to `main`, Hostinger:
+   - Pulls the latest code
+   - Runs `npm install` to install dependencies
+   - Runs `npm run build` to create production files in `/dist`
+   - Deploys the `/dist` folder to the live site
+
+### Hostinger Setup (already configured)
+
+**Location:** Hostinger hPanel → Websites → lionrockinstitute.com → Advanced → Git
+
+**Current settings:**
+- **Repository:** `hakangit/lion-rock-institute-site`
+- **Branch:** `main`
+- **Auto-deploy:** Enabled (deploys on every push)
+- **Install command:** `npm install`
+- **Build command:** `npm run build`
+- **Publish directory:** `dist`
+
+### Manual Deploy (if needed)
+
+If auto-deploy fails, you can trigger manually:
+1. Log into Hostinger hPanel
+2. Go to Websites → lionrockinstitute.com → Advanced → Git
+3. Click "Deploy" or "Pull and Deploy"
+
+### Changing GitHub Permissions
+
+If Hostinger can't access the repo:
+1. Go to GitHub.com → Settings → Applications
+2. Find Hostinger → Configure
+3. Add the repository under "Repository access"
 
 ## Site Sections
 
