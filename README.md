@@ -1,16 +1,115 @@
-# React + Vite
+# Lion Rock Institute Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Official website for The Lion Rock Institute - Hong Kong's independent free-market think tank.
 
-Currently, two official plugins are available:
+**Live site:** https://lionrockinstitute.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- **React 19** - UI framework
+- **Vite 7** - Build tool & dev server
+- **Vanilla CSS** - Custom styling with CSS variables
+- **Hostinger** - Hosting with auto-deploy from GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Structure
 
-## Expanding the ESLint configuration
+```
+lion-rock-institute-site/
+├── src/
+│   ├── App.jsx          # Main component (all sections)
+│   ├── App.css          # All styling
+│   ├── index.css        # Base styles
+│   └── main.jsx         # Entry point
+├── public/
+│   └── images/
+│       ├── logo.svg     # Site logo
+│       └── hero.jpg     # Fallback hero image
+├── index.html           # HTML template + meta tags
+├── package.json
+└── vite.config.js
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server (http://localhost:5173)
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Deployment
+
+The site auto-deploys to Hostinger when you push to `main`:
+
+1. Make changes locally
+2. Commit and push to GitHub
+3. Hostinger automatically builds and deploys
+
+**Build settings on Hostinger:**
+- Install command: `npm install`
+- Build command: `npm run build`
+- Publish directory: `dist`
+
+## Site Sections
+
+| Section | Description |
+|---------|-------------|
+| **Hero** | YouTube video background, title, tagline |
+| **About** | Mission, history, approach + policy areas |
+| **Team** | Board member profiles |
+| **Contact** | Address, phone, email |
+| **Footer** | Company info, charity status, video credit |
+
+## Updating Content
+
+### Team Members
+Edit `src/App.jsx`, find the `team-grid` section. Each member has:
+```jsx
+<div className="team-card">
+  <div className="team-avatar">XX</div>  {/* Initials */}
+  <h3>Name</h3>
+  <p className="team-role">Role</p>
+  <p className="team-bio">Bio text...</p>
+</div>
+```
+
+### Contact Info
+Edit `src/App.jsx`, find the `contact-grid` section.
+
+### Hero Video
+Edit `src/App.jsx`, find the YouTube iframe. Change the video ID in the URL:
+```
+https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=VIDEO_ID&start=16
+```
+
+### Colors
+Edit `src/App.css`, modify the CSS variables at the top:
+```css
+:root {
+  --primary-color: #1a365d;
+  --accent-color: #3182ce;
+  /* etc */
+}
+```
+
+## Current Team (Dec 2025)
+
+- Andrew Work - Co-Founder
+- Bill Stacey - Director
+- Nicolas Koehl - Director
+- Anson Leung - Director
+- Bon Chow - Director
+
+## Contact
+
+- **Address:** 11/F, Asiarich Court, 5 Staunton Street, Central, Hong Kong
+- **Phone:** +852 3582 8673 / 8674
+- **Email:** Communications@lionrockinstitute.org
