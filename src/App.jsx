@@ -121,13 +121,6 @@ function App() {
             </div>
 
             <div className="team-card">
-              <div className="team-avatar">AS</div>
-              <h3>Andrew Shuen</h3>
-              <p className="team-role">Co-Founder</p>
-              <p className="team-bio">Youngest Legislative Council candidate in 2000. Economics degree from University of Michigan. Financial columnist and radio host at Digital Broadcast Corporation.</p>
-            </div>
-
-            <div className="team-card">
               <div className="team-avatar">BS</div>
               <h3>Bill Stacey</h3>
               <p className="team-role">Director</p>
@@ -136,9 +129,23 @@ function App() {
 
             <div className="team-card">
               <div className="team-avatar">NK</div>
-              <h3>Koehl Nicolas Stephan</h3>
+              <h3>Nicolas Koehl</h3>
               <p className="team-role">Director</p>
               <p className="team-bio">Current director of the Lion Rock Institute, contributing to the organization's mission of promoting free market principles in Hong Kong.</p>
+            </div>
+
+            <div className="team-card">
+              <div className="team-avatar">AL</div>
+              <h3>Anson Leung</h3>
+              <p className="team-role">Director</p>
+              <p className="team-bio">Board member of the Lion Rock Institute, dedicated to advancing free market advocacy in Hong Kong.</p>
+            </div>
+
+            <div className="team-card">
+              <div className="team-avatar">BC</div>
+              <h3>Bon Chow</h3>
+              <p className="team-role">Director</p>
+              <p className="team-bio">Board member of the Lion Rock Institute, committed to promoting economic freedom and individual liberty in Hong Kong.</p>
             </div>
           </div>
         </div>
@@ -159,7 +166,7 @@ function App() {
                 </svg>
               </div>
               <h3>Address</h3>
-              <p>Room 18, 18/F, 299 QRC<br />299 Queen's Road Central<br />Hong Kong</p>
+              <p>11/F, Asiarich Court<br />5 Staunton Street, Central<br />Hong Kong</p>
             </div>
 
             <div className="contact-card">
