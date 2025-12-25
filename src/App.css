@@ -490,6 +490,21 @@ body {
   font-size: 0.85rem;
 }
 
+.footer-credit {
+  opacity: 0.5;
+  font-size: 0.75rem;
+  margin-top: 8px;
+}
+
+.footer-credit a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-credit a:hover {
+  opacity: 0.8;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .nav-menu {

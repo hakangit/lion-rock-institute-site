@@ -219,6 +219,9 @@ function App() {
             </div>
             <p className="footer-info">IRD Registered Charity | Incorporated August 8, 2007</p>
             <p className="footer-copyright">&copy; 2004 - {new Date().getFullYear()} The Lion Rock Institute. All rights reserved.</p>
+            <p className="footer-credit">
+              Video: <a href="https://www.youtube.com/watch?v=8admjGK6FF8" target="_blank" rel="noopener noreferrer">Hong Kong Timelapse</a>
+            </p>
           </div>
         </div>
       </footer>
